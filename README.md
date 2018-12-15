@@ -1,8 +1,13 @@
 # text-summary
 A lightweight go library for summarizing text into n lines.
 
-# Usage
+# Installation
 ```
+go get github.com/arjunmahishi/text-summary
+```
+
+# Usage
+```go
 package main
 
 import (
@@ -16,8 +21,10 @@ func main() {
 
 	summarizer := textsummary.CreateSummarizer()
 
-	summary := summarizer.Summary(para, 1)
+	summary := summarizer.Summary(para, 1) // Gives a 1 line summary
 	fmt.Println(summary)
+
+    // Output: Ease is a greater threat to progress than hardship.
 }
 
 ```
